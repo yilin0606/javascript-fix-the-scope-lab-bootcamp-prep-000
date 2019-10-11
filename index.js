@@ -21,6 +21,15 @@ var funkyFunction = function() {
   }
 }
 
- var theFunk = funkyFunction() {
-  return "FUNKY!"
+theFunk = funkyFunction() {
+  return function();
 }
+
+
+ describe('theFunk', function() {
+    it('is "FUNKY!"', function() {
+      expect(window.theFunk).toEqual('FUNKY!')
+    })
+  })
+
+})

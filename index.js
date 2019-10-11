@@ -15,21 +15,10 @@ function add2(n) {
 }
 
 
+
+theFunk = funkyFunction()
 var funkyFunction = function() {
   return function() {
     return "FUNKY!"
   }
 }
-
-theFunk = funkyFunction() {
-  return function();
-}
-
-
- describe('theFunk', function() {
-    it('is "FUNKY!"', function() {
-      expect(window.theFunk).toEqual('FUNKY!')
-    })
-  })
-
-})
